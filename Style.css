@@ -53,10 +53,21 @@ body {
     margin-left: 40px;
 }
 
+@media (max-width:575px) {
+    .menu{
+        margin-top: 16px;
+        margin-left: 0;
+
+    }
+}
 .menu-item {
     color: #595959;
     text-decoration: none;
     margin-right: 16px;
+}
+
+.menu-item:last-child{
+    margin-right: 0;
 }
 
 .menu-item:hover {
@@ -73,16 +84,41 @@ body {
     height: 500px;
 }
 
+@media (max-width:575px) {
+    .banner{
+        height: 250px;
+    }
+}
+
+.banner-container{
+    display: flex;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .banner-title {
     color: #222222;
     font-size: 36px;
     margin-bottom: 0;
 }
 
+@media (max-width:575px) {
+    .banner-title{
+        font-size: 26px;
+    }
+}
+
 .banner-subtitle {
     color: #595959;
     font-size: 20px;
     margin-top: 8px;
+}
+
+@media (max-width:575px) {
+    .banner-subtitle{
+        font-size: 14px;
+    }
 }
 
 /* Category */
