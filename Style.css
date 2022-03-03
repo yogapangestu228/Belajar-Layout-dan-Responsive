@@ -164,6 +164,24 @@ body {
     row-gap: 36px;
 }
 
+@media (max-width:991px) {
+    .product-list {
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+@media (max-width:767px) {
+    .product-list {
+        grid-template-columns: repeat(2, 48%);
+    }
+}
+
+@media (max-width:575px) {
+    .product-list {
+        grid-template-columns: 100%;
+    }
+}
+
 .product-item {
     border: 1px solid #e3e3e3;
     border-radius: 8px;
