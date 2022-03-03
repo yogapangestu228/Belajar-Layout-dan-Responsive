@@ -13,7 +13,7 @@ body {
     margin: auto;   
 }
 
-@media (max-widht: 860px) {
+@media (max-widht: 991px) {
     .container{
         max-width:100%;
         margin-right: 40px;
