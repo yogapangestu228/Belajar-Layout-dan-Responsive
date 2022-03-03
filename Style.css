@@ -1,12 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+
+/* Dipakek di banyak tempat */
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 860px;
+    width: 860px;
+    margin: auto;   
 }
+
+@media (max-widht: 860px) {
+    .container{
+        max-width:100%;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
 
 /* Header */
 .header {
@@ -29,28 +43,22 @@ body {
 
 .menu-item {
     color: #595959;
-    font-size: 16px;
-    margin-right: 16px;
     text-decoration: none;
+    margin-right: 16px;
 }
 
 .menu-item:hover {
     color: #77287d;
-    display: inline-block;
     text-decoration: underline;
 }
 
+/* Banner */
 .banner {
+    align-items: center;
     background-image: url('images/banner.jpg');
     background-size: cover;
-    height: 500px;
-}
-
-.banner-container {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    height: 500px;
 }
 
 .banner-title {
