@@ -77,10 +77,10 @@ body {
 
 /* Banner */
 .banner {
-    align-items: center;
+    /* align-items: center; */
     background-image: url('images/banner.jpg');
     background-size: cover;
-    display: flex;
+    /* display: flex; */
     height: 500px;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .banner-container{
     display: flex;
-    height: 10%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -102,6 +102,12 @@ body {
     font-size: 36px;
     margin-bottom: 0;
 }
+
+/* @media (max-width:1199px) {
+    .banner-title{
+        margin-right: 70px;
+    }
+}  */
 
 @media (max-width:575px) {
     .banner-title{
